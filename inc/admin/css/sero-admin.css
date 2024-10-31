@@ -1,0 +1,224 @@
+/**
+ * All of the CSS for your admin-specific functionality should be included in this file.
+ *
+ * The file is enqueued from inc/admin/class-admin.php.
+ */
+ .freenium-background {
+    background-image: url(../img/freenium-bg.png);
+ }
+.clickable {
+	cursor: pointer;
+}
+.btn-loading .spinner-grow, .btn-loading .spinner-border{
+    display: none;
+}
+.btn-loading.loading .spinner-grow,.btn-loading .spinner-border{
+    display: inline-block;
+}
+.trigger-custom .trigger-custom-content{
+    display: none;
+}
+.trigger-custom.show .trigger-custom-content{
+    display: block;
+}
+.data-table-addons{
+    z-index: 99;
+    position: absolute;
+    right: 300px;
+    top: 20px;
+}
+.toast-container {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+}
+.card {
+    max-width: initial;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, .5);
+}
+.overlay .overlay-body{
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.chip {
+    vertical-align: middle;
+}
+.chip .chip-body .avatar,
+.chip .chip-body .avatar img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+.chip {
+    background-color: #f0f0f0;
+    font-size: 0.8rem;
+    border-radius: 1.428rem;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.chip .chip-body i,
+.divider .divider-text i {
+    font-size: 1rem;
+}
+.chip .chip-body,
+.chip .chip-body .avatar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.chip .chip-body {
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 1.857rem;
+    min-width: 1.857rem;
+}
+.chip .chip-body .avatar {
+    display: flex;
+    margin: 2px 1px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    -webkit-transform: translate(-8px);
+    -ms-transform: translate(-8px);
+    transform: translate(-8px);
+}
+.chip .chip-body .avatar.end {
+    -webkit-transform: translate(8px);
+    -ms-transform: translate(8px);
+    transform: translate(8px);
+}
+.chip .chip-body .avatar .avatar-content {
+    top: 0;
+}
+.chip .chip-body .chip-text {
+    vertical-align: middle;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.chip .chip-body .chip-closeable {
+    min-height: 24px;
+    min-width: 24px;
+    margin: 0 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.15);
+    color: #fff;
+    -webkit-transform: translate(10px);
+    -ms-transform: translate(10px);
+    transform: translate(10px);
+    cursor: pointer;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .chip .chip-closeable i {
+        position: relative;
+        top: 3px;
+    }
+}
+.divider {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin: 1rem 0;
+    white-space: nowrap;
+}
+.divider .divider-text {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+.divider.divider-left .divider-text:before,
+.divider.divider-right .divider-text:after {
+    display: none;
+}
+.divider .divider-text:after,
+.divider .divider-text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    border-top: 1px solid #dfe3e7;
+}
+.divider .divider-text:before {
+    right: 100%;
+}
+.divider .divider-text:after {
+    left: 100%;
+}
+.divider.divider-left .divider-text {
+    float: left;
+    padding-left: 0;
+}
+.divider.divider-left-center .divider-text {
+    left: -25%;
+}
+.divider.divider-right .divider-text {
+    float: right;
+    padding-right: 0;
+}
+.divider.divider-right-center .divider-text {
+    right: -25%;
+}
+.divider.divider-dotted .divider-text:after,
+.divider.divider-dotted .divider-text:before {
+    border-style: dotted;
+    border-width: 0 1px 1px;
+    border-color: #000;
+}
+.divider.divider-dashed .divider-text:after,
+.divider.divider-dashed .divider-text:before {
+    border-style: dashed;
+    border-width: 0 1px 1px;
+    border-color: #000;
+}
+
+.DateInput_input {
+  border: none!important;
+}
+
+.select2-container .select2-selection--single {
+  height: calc(1.5em + .75rem + 2px);
+}
